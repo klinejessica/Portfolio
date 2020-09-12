@@ -76,10 +76,10 @@ const toggleClock = (reset) => {
         }
         if (isClockRunning === true) {
             //pause the timer
-            isClockRunning = false;
             clearInterval(clockTimer);
+            isClockRunning = false;
+            
         } else {
-            isClockRunning = true;
             clockTimer = setInterval(() => {
                 //decrease time left / increase time spent
                 // currentTimeLeftInSession--;
@@ -91,11 +91,11 @@ const toggleClock = (reset) => {
         }
         showStopIcon();
     }
-}
+};
 
 const displayCurrentTimeLeftInSession = () => {
     const secondsLeft = currentTimeLeftInSession;
-    let result = '';
+    let result = "";
     const seconds = secondsLeft % 60;
     const minutes = parseInt(secondsLeft / 60) % 60;
     let hours = parseInt(secondsLeft / 3600);
@@ -105,7 +105,7 @@ const displayCurrentTimeLeftInSession = () => {
     }
     if (hours > 0) result += `${hours}:`
     result += `${addLeadingZeros(minutes)}:${addLeadingZeros(seconds)}`
-    pomodoroTimer.text.innerText = result.toString();
+    progressBar.text.innerText = result.toString();
 }
 
 const stopClock = () => {

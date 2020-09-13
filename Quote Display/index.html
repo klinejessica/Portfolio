@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Random Quote</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Quote</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2070828fd3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src='index.js'></script>
-  </head>
+  <script src='index.js'></script>
+</head>
 
-  <body>
-      <div class="page-content randomBgColor">
-          <div id="quote-box"></div>
-          <div id="text"></div>
-          <i class = "fa fa-quote-left randomTxtColor" aria-hidden="true" />
-          <span id="quoteText" class = "randomTxtColor" />
-          <br>
-          <span id="quoteAuthor" class = "randomTxtColor" />
-      </div>
-      <div id="buttonBox">
-          <button id="new-quote" class="cta randomBgColor">New Quote</button>
-      </div>
+<body>
+  <div class="page-content randomBgColor">
+    <div id="quote-box">
+      <div id="text">
+      <i class="fas fa-quote-left"></i>
+      <span id="quoteText" class="randomTxtColor"></span>
+      <i class="fas fa-quote-right"></i>
+      <br>
+      <br>
+      <span id="quoteAuthor" class="randomTxtColor"></span>
+    </div>
+    </div>
+  
+    <div id="buttonBox">
+      <button id="new-quote">New Quote</button>
+    </div>
+  </div>
+</body>
+</html>

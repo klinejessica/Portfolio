@@ -34,7 +34,7 @@
   }
   
   #pomodoro-clock-circle * {
-    color: peru;
+    color: red;
 
   }
   
@@ -63,7 +63,7 @@
   #pomodoro-clock-actions button {
     height: 40px;
     width: 40px;
-    border-radius: 50%;
+   /* border-radius: 50%; */
   }
   
   .hidden {
